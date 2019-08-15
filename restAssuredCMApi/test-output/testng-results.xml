@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1792" started-at="2019-07-11T20:56:28Z" finished-at="2019-07-11T20:56:30Z">
+  <suite name="Default suite" duration-ms="1839" started-at="2019-08-15T02:55:21Z" finished-at="2019-08-15T02:55:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1792" started-at="2019-07-11T20:56:28Z" finished-at="2019-07-11T20:56:30Z">
+    <test name="Default test" duration-ms="1839" started-at="2019-08-15T02:55:21Z" finished-at="2019-08-15T02:55:23Z">
       <class name="restAssuredCMApi.GetData">
-        <test-method status="FAIL" signature="getTest()[pri:0, instance:restAssuredCMApi.GetData@548b7f67]" name="getTest" duration-ms="1767" started-at="2019-07-11T16:56:28Z" finished-at="2019-07-11T16:56:30Z">
+        <test-method status="FAIL" signature="postTest()[pri:0, instance:restAssuredCMApi.GetData@5f375618]" name="postTest" duration-ms="1812" started-at="2019-08-14T22:55:21Z" finished-at="2019-08-14T22:55:23Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [200] but found [401]]]>
@@ -20,7 +20,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:389)
 	at org.testng.Assert.assertEquals(Assert.java:399)
-	at restAssuredCMApi.GetData.getTest(GetData.java:40)
+	at restAssuredCMApi.GetData.postTest(GetData.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,7 +50,7 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTest -->
+        </test-method> <!-- postTest -->
       </class> <!-- restAssuredCMApi.GetData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

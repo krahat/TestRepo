@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Windows\Temp\testng-eclipse--231435786\testng-customsuite.xml</span>
+                    <span>C:\Windows\Temp\testng-eclipse--176590197\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="restAssuredCMApi.GetData" hash-for-method="getTest">getTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="restAssuredCMApi.GetData" hash-for-method="postTest">postTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getTest">
-                  </a> <!-- getTest -->
-                  <span class="method-name">getTest</span>
+                  <a name="postTest">
+                  </a> <!-- postTest -->
+                  <span class="method-name">postTest</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [200] but found [401]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
@@ -135,7 +135,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:116)
 	at org.testng.Assert.assertEquals(Assert.java:389)
 	at org.testng.Assert.assertEquals(Assert.java:399)
-	at restAssuredCMApi.GetData.getTest(GetData.java:40)
+	at restAssuredCMApi.GetData.postTest(GetData.java:74)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,7 +169,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Windows\Temp\testng-eclipse--231435786\testng-customsuite.xml</span>
+            <span class="header-content">C:\Windows\Temp\testng-eclipse--176590197\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -178,14 +178,18 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;restAssuredCMApi.GetData&quot;/&gt;
+      &lt;class name=&quot;restAssuredCMApi.GetData&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;postTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- restAssuredCMApi.GetData --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
   &lt;test name=&quot;Default test(failed)&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;restAssuredCMApi.GetData&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;getTest&quot;/&gt;
+          &lt;include name=&quot;postTest&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- restAssuredCMApi.GetData --&gt;
     &lt;/classes&gt;
@@ -232,9 +236,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getTest')
+data.setCell(0, 1, 'postTest')
 data.setCell(0, 2, 'restAssuredCMApi.GetData')
-data.setCell(0, 3, 1767);
+data.setCell(0, 3, 1812);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -254,9 +258,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">restAssuredCMApi.GetData</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -269,7 +280,7 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">getTest</span>
+                <span class="method-name">postTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
